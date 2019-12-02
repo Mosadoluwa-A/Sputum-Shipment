@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup</title>
+	<style type="text/css">
+		#form{
+			margin-left: 450px;
+			margin-top: 200px;
+		}
+	</style>
+</head>
+<body>
+	<form action="{{url_for('signup')}}" method="POST">
+		{{form.hidden_tag()}}
+		<div id="form">
+					{{form.uname.label}}
+					{{form.uname}}
+					<br>
+					{{form.upass.label}}
+					{{form.upass}}
+					<br>
+					{{form.submit}}
+				</div>
+	</form>
+</body>
+</html>

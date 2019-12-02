@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<style type="text/css">
+		.container{
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-around;
+			/*background-color: blue;*/
+			margin-top: 150px;
+		}
+
+		h2{
+			font-size: 70px;
+		}
+
+		p{
+			color: red;
+		}
+
+		.login{
+			font-size: 35px;
+		}
+	</style>
+</head>
+<body>
+		<div class="container">
+			<h2>Welcome riders!<br> <small>Please sign in</small></h2>
+			<form action="{{url_for('login')}}" method="POST">
+				{{form.hidden_tag()}}
+
+				{% for message in form.uname.errors %}
+
+				{% if error %}
+		
+				<p><strong>Error:</strong></p> {{message}} 
+
+				{% endif %}
+		
+				{% endfor %}
+
+				{% for message in form.upass.errors %}
+
+				{% if error %}
+		
+				<p><strong>Error:</strong></p> {{message}} 
+
+				{% endif %}
+		
+				{% endfor %}
+
+				{% with messages = get_flashed_messages() %}
+				{% if messages %}
+				{% for message in messages %}
+				<p>{{message}}</p>
+				{% endfor %}
+				{% endif %}
+				{% endwith %}
+
+				<div class="login">
+					{{form.uname.label}}
+					{{form.uname}}
+					<br>
+					{{form.upass.label}}
+					{{form.upass}}
+					<br>
+					{{form.submit}}
+				</div>
+			</form>
+		</div>
+</body>
+</html>
