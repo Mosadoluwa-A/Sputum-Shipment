@@ -10,7 +10,13 @@
 	</style>
 </head>
 <body>
+	{% with messages = get_flashed_messages() %}
+	{% for message in messages %}
+	{{message}}
+	{% endfor %}
+	{% endwith %}
 	<h1 align="center">Welcome to your dashboard rider {{name}} !</h1>
-	}
-</body>
+	<a href="{{url_for('logout')}}"><button>Logout</button></a>
+
+	</body>
 </html>
