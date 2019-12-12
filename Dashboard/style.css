@@ -1,0 +1,14 @@
+
+.border-right{
+	border-right: .5em solid rgba(245, 2, 2, 0.5) !important;
+}nav{
+	background-color: rgb();
+}body{
+	background-image: url(media/bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+} footer{
+	background-color: rgba(255, 66, 28, 0.3);
+}.box{
+	background-color: rgb(201, 252, 179);
+}
