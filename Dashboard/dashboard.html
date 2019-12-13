@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">/
 
     <title>Rider Dashboard</title>
     <style type="text/css">
@@ -37,11 +38,13 @@
               </div>
             </nav>
             
-            <div class="row bg">
+            <div class="row ">
                 <div class="col-sm-2 p-3">
                   <div class="container">
                         <div class="card p-2">
+                          
                         <img class="rounded-circle border border-warning card-img-top p-1" src="media/avatar.png" alt="Card image cap" style="width: 60%; height: auto; margin: auto;">
+                        
                         <div class="card-title text-center">
                           <strong>John Snow</strong>
                         </div>
@@ -68,8 +71,9 @@
                   <div class="box  mt-4 mb-4 rounded">
                         <div class="d-flex-row p-4 justify-content-around">
                           <div class="card-deck">
-                                  <div class="card border-right">
-                                          <div class="card-head  p-2">
+                                  <div class="card border-right bg-success" style="background-image: url(media/micro.jpg); background-position: center; background-size: 100%; ">
+                                          <div class="card-head  p-2 text-center">
+                                            <i class="fa-flask"></i>
                                             <p>Collected</p>
                                           </div>
                                           <div class="card-body text-center">
@@ -77,24 +81,27 @@
                                                 <h3>2500</h3>
                                           </div>
                                   </div>
-                                   <div class="card border-right">
+                                   <div class="card border-right bg-warning text-center">
                                           <div class="card-head  p-2">
+                                             <i class="fa-flask"></i>
                                             <p>Received</p>
                                           </div>
                                           <div class="card-body text-center">
                                             <h3>2500</h3>
                                           </div>
                                   </div>
-                                  <div class="card border-right">
+                                  <div class="card border-right bg-danger text-center">
                                           <div class="card-head p-2">
+                                            <span>&#8358;</span>
                                             <p>Earnings</p>
                                           </div>
                                           <div class="card-body text-center">
                                                 <h3>2500</h3>
                                           </div>
                                   </div>
-                                  <div class="card border-right">
+                                  <div class="card border-right bg-success text-center">
                                         <div class="card-head p-2">
+                                            <span>&#8358;</span>
                                             <p>Payout</p>
                                           </div>
                                           <div class="card-body text-center">
@@ -104,11 +111,30 @@
                             </div>
                           </div>
                   </div>
-                  <div class="box table-responsive p-2 pt-3 container rounded">
+            </div>
+            <div class="container">
+                  <div class="box table-responsive p-2 pt-3 rounded">
                             <table class="table">
-                              <div class="table-title">
-                                <h2>Current Shipment</h2>
-                              </div>
+                              <div class="card">
+
+                                    <div
+                                      class="view view-cascade py-2 pl-3 pr-3 d-flex justify-content-between align-items-center">
+                                        <div class="table-title">
+                                          <h2>Current Shipment</h2>
+                                        </div>
+
+
+                                      <div>
+                                        <button type="button" class="btn  btn-sm">
+                                          <i class="material-icons">add_circle_outline</i>
+                                        </button>
+                                        <button type="button" class="btn btn-sm">
+                                          <i class="material-icons">post_add</i>
+                                        </button>
+                                      </div>
+
+                                    </div>
+
                                 <thead>
                                   <tr>
                                       <th scope="col">Tracking Number</th>
@@ -130,7 +156,7 @@
                                     <td>12/03/1930 12:00pm</td>
                                     <td>Toronto</td>
                                     <td>Picked from facility</td>
-                                    <td class="row">
+                                    <td class="d-flex-row">
                                         
                                     </td>
                                   </tr>
@@ -161,11 +187,27 @@
                                 </tbody>
                               </table>
                     </div>
+                    
                     <div class="box table-responsive p-2 pt-3 mt-3 mb-3 rounded">
+                        <div class="container">
                             <table class="table">
-                               <div class="table-title">
-                                <h2>Last 50 Shipments</h2>
-                              </div>
+                               <div
+                                      class="view view-cascade py-2 pl-3 pr-3 d-flex justify-content-between align-items-center">
+                                        <div class="table-title">
+                                          <h2>Last 50 Shipments</h2>
+                                        </div>
+
+
+                                      <div>
+                                        <button type="button" class="btn  btn-sm">
+                                          <i class="material-icons">add_circle_outline</i>
+                                        </button>
+                                        <button type="button" class="btn btn-sm">
+                                          <i class="material-icons">post_add</i>
+                                        </button>
+                                      </div>
+
+                                    </div>
                                 <thead>
                                   <tr>
                                       <th scope="col">Tracking Number</th>
@@ -421,10 +463,13 @@
                                   </tr>
                                 </tbody>
                               </table>
+                          </div>
                     </div>
+
                   
                 </div>
             </div>
+            
             <footer class="page-footer font-small">
               <div class="footer-copyright text-center py-3">© 2020 Copyright:
                 <a href="https://mdbootstrap.com/education/bootstrap/">Damiene Foundation Nigeria </a>
