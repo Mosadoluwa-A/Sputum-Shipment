@@ -4,11 +4,17 @@
 }nav{
 	background-color: rgb();
 }body{
-	background-image: url(media/rider-3.jpg);
+	background-image: url(media/b.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 } footer{
 	background-color: rgba(255, 66, 28, 0.3);
 }.box{
-	background-color: rgb(190, 252, 179);
+	background-color: rgb(250, 220, 190);
+	/*background-color: red;*/
+}
+.rider{
+	/*background-image: url(media/rider-7.jpg);
+	background-size: cover;*/
+	background-color: rgb(250, 200, 230);
 }
