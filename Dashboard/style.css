@@ -4,7 +4,7 @@
 }nav{
 	background-color: rgb();
 }body{
-	background-image: url(media/b.jpg);
+	background-image: linear-gradient(to bottom, rgba(10, 10, 10, .3), rgba(10, 10, 10, .57)), url(media/b.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 } footer{
@@ -17,4 +17,13 @@
 	/*background-image: url(media/rider-7.jpg);
 	background-size: cover;*/
 	background-color: rgb(250, 200, 230);
+}
+#navBg {
+	background-color: transparent !important;
+}
+
+#navBg .navItem {
+	background: transparent !important;
+	color: #fee;
+	font-weight: bolder;
 }
