@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">/
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>Rider Dashboard</title>
     <style type="text/css">
@@ -17,22 +20,42 @@
         padding-left: 500px;
       }
     </style>
+    <script type="text/javascript">
+    </script>
   </head>
   <body>
-            <nav class="navbar navbar-expand-lg ">
+            <nav class="navbar navbar-expand-lg bg-secondary">
               <div class="container">
                   <a class="navbar-brand" href="#">
-                    <img src="media/logo.gif">
+                    <img src="media/logo2.png">
                   </a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                      <div class="navbar-nav nav-pills  ml-6">
-                          <a class="nav-item nav-link m-1 active" href="#">Shipments <span class="sr-only">(current)</span></a>
-                          <a class="nav-item nav-link m-1 active" href="#">Samples</a>
-                          <a class="nav-item nav-link m-1 active" href="#">Logout</a>
-                          <a class="nav-item nav-link m-1 active" href="#">Logged: </a>
+                      <div class="navbar-nav nav-pills ml-6">
+                          <a class="nav-item nav-link m-1 active bg-secondary" href="#">Shipments <span class="sr-only">(current)</span></a>
+                          <a class="nav-item nav-link m-1 active bg-secondary" href="#">Samples</a>
+                          <a class="nav-item nav-link m-1 active bg-secondary" href="#">Logout</a>
+                          <a class="nav-item nav-link m-1 active bg-secondary" href="#">Logged: </a>
+                          <div class="dropdown">
+                                                <a href="#" class="btn btn-secondary nav-item nav-link selection dropdown-toggle" data-toggle="dropdown" id="dropdownMenuLinkNav" aria-hashpopu=true aria-eaxpanded=false>Year</a>
+                                                  
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                  <a href="#" class="dropdown-item">2020</a>
+                                                  <a href="#" class="dropdown-item">2021</a>
+                                                  <a href="#" class="dropdown-item">2022</a>
+                                                  <a href="#" class="dropdown-item">2023</a>
+                                                  <a href="#" class="dropdown-item">2024</a>
+                                                  <a href="#" class="dropdown-item">2025</a>
+                                                  <a href="#" class="dropdown-item">2026</a>
+                                                  <a href="#" class="dropdown-item">2027</a>
+                                                  <a href="#" class="dropdown-item">2028</a>
+                                                  <a href="#" class="dropdown-item">2029</a>
+                                                  <a href="#" class="dropdown-item">2030</a>
+                                                </div>
+
+                                              </div>
                       </div>
                   </div>
               </div>
@@ -41,7 +64,7 @@
             <div class="row ">
                 <div class="col-sm-2 p-3">
                   <div class="container">
-                        <div class="card p-2">
+                        <div class="card p-2 rider">
                           
                         <img class="rounded-circle border border-warning card-img-top p-1" src="media/avatar.png" alt="Card image cap" style="width: 60%; height: auto; margin: auto;">
                         
@@ -68,32 +91,68 @@
                 
 
                 <div class="col-sm-10" >
-                  <div class="box  mt-4 mb-4 rounded">
+                  <div class="box  mt-4 mb-4 mr-2 rounded">
                         <div class="d-flex-row p-4 justify-content-around">
                           <div class="card-deck">
+<<<<<<< HEAD
                                   <div class="card border-right bg-success" >
+=======
+                                  <div class="card border-right bg-success">
+>>>>>>> 40cbe23a39efdc889e0463cce99ce85347216a20
                                           <div class="card-head  p-2 text-center">
-                                            <i class="fa-flask"></i>
+                                            <i class="fas fa-flask"></i>
                                             <p>Collected</p>
+                                              <div class="dropdown">
+                                                <a href="#" class="btn btn-success selection dropdown-toggle" data-toggle="dropdown" id="dropdownMenuLink1" aria-hashpopu=true aria-eaxpanded=false>Quarter</a>
+                                                  
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                  <a href="#" class="dropdown-item">Q1</a>
+                                                  <a href="#" class="dropdown-item">Q2</a>
+                                                  <a href="#" class="dropdown-item">Q3</a>
+                                                  <a href="#" class="dropdown-item">Q4</a>
+                                                </div>
+
+                                              </div>
                                           </div>
                                           <div class="card-body text-center">
-                                                
-                                                <h3>2500</h3>
+                                                <h3 id="chn1">2500</h3>
                                           </div>
                                   </div>
                                    <div class="card border-right bg-warning text-center">
                                           <div class="card-head  p-2">
-                                             <i class="fa-flask"></i>
+                                             <i class="fas fa-flask"></i>
                                             <p>Received</p>
+                                            <div class="dropdown">
+                                                <a href="#" class="btn btn-warning dropdown-toggle selection" data-toggle="dropdown" id="dropdownMenuLink" aria-hashpopu=true aria-eaxpanded=false>Quarter</a>
+                                                  
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                  <a href="#" class="dropdown-item">Q1</a>
+                                                  <a href="#" class="dropdown-item">Q2</a>
+                                                  <a href="#" class="dropdown-item">Q3</a>
+                                                  <a href="#" class="dropdown-item">Q4</a>
+                                                </div>
+
+                                              </div>
                                           </div>
                                           <div class="card-body text-center">
-                                            <h3>2500</h3>
+                                            <h3 class="bd">2500</h3>
                                           </div>
                                   </div>
                                   <div class="card border-right bg-danger text-center">
                                           <div class="card-head p-2">
                                             <span>&#8358;</span>
                                             <p>Earnings</p>
+                                            <div class="dropdown">
+                                                <a href="#" class="btn btn-danger selection dropdown-toggle" data-toggle="dropdown" id="dropdownMenuLink" aria-hashpopu=true aria-eaxpanded=false>Quarter</a>
+                                                  
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                  <a href="#" class="dropdown-item">Q1</a>
+                                                  <a href="#" class="dropdown-item">Q2</a>
+                                                  <a href="#" class="dropdown-item">Q3</a>
+                                                  <a href="#" class="dropdown-item">Q4</a>
+                                                </div>
+
+                                              </div>
                                           </div>
                                           <div class="card-body text-center">
                                                 <h3>2500</h3>
@@ -103,6 +162,17 @@
                                         <div class="card-head p-2">
                                             <span>&#8358;</span>
                                             <p>Payout</p>
+                                            <div class="dropdown">
+                                                <a href="#" class="btn btn-success selection dropdown-toggle" data-toggle="dropdown" id="dropdownMenuLink" aria-hashpopu=true aria-eaxpanded=false>Quarter</a>
+                                                  
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                  <a href="#" class="dropdown-item">Q1</a>
+                                                  <a href="#" class="dropdown-item">Q2</a>
+                                                  <a href="#" class="dropdown-item">Q3</a>
+                                                  <a href="#" class="dropdown-item">Q4</a>
+                                                </div>
+
+                                              </div>
                                           </div>
                                           <div class="card-body text-center">
                                                 <h3>2500</h3>
@@ -472,13 +542,27 @@
             
             <footer class="page-footer font-small">
               <div class="footer-copyright text-center py-3">© 2020 Copyright:
-                <a href="https://mdbootstrap.com/education/bootstrap/">Damiene Foundation Nigeria </a>
+                <a href="#">Damiene Foundation Nigeria </a>
               </div>
       </footer>
-    <!-- Optional JavaScript -->
+
+    <!--JavaScript to make the dropdown items change -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+   <script type="text/javascript">
+      $(document).ready(function(){
+        $('.dropdown-item').click(function(){
+          $(this).parents(".dropdown").find('.selection').text($(this).text());
+          $(this).parents(".dropdown").find('.selection').val($(this).text());
+        });
+      });
+   </script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
   </body>
 </html>
