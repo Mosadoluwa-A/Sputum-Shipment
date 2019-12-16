@@ -1,29 +1,19 @@
 
-.border-right{
-	border-right: .5em solid rgba(245, 2, 2, 0.5) !important;
-}nav{
+nav{
 	background-color: rgb();
 }body{
 	background-image: linear-gradient(to bottom, rgba(10, 10, 10, .3), rgba(10, 10, 10, .57)), url(media/b.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-} footer{
-	background-color: rgba(255, 66, 28, 0.3);
-}.box{
-	background-color: rgb(250, 220, 190);
-	/*background-color: red;*/
 }
-.rider{
-	/*background-image: url(media/rider-7.jpg);
-	background-size: cover;*/
-	background-color: rgb(250, 200, 230);
-}
-#navBg {
-	background-color: transparent !important;
-}
-
 #navBg .navItem {
-	background: transparent !important;
+	
 	color: #fee;
 	font-weight: bolder;
+}td{
+	line-height: 1em;
+}h2{
+	font-family: 'Baloo Bhai', cursive;
+}.table-body{
+	background-color: rgba(40, 254, 219, 0.4);
 }

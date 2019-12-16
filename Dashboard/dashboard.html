@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/css/fontawesome.css">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Acme|Baloo+Bhai&display=swap" rel="stylesheet">
 
     <title>Rider Dashboard</title>
     <style type="text/css">
@@ -24,7 +25,7 @@
     </script>
   </head>
   <body>
-            <nav class="navbar navbar-expand-lg bg-light" id="navBg">
+            <nav class="navbar navbar-expand-lg" id="navBg">
               <div class="container">
                   <a class="navbar-brand" href="#">
                     <img src="media/logo2.png">
@@ -34,10 +35,10 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                       <div class="navbar-nav nav-pills ml-6">
-                          <a class="nav-item nav-link m-1 active bg-secondary navItem" href="#">Shipments <span class="sr-only">(current)</span></a>
-                          <a class="nav-item nav-link m-1 active bg-secondary navItem" href="#">Samples</a>
-                          <a class="nav-item nav-link m-1 active bg-secondary navItem" href="#">Logout</a>
-                          <a class="nav-item nav-link m-1 active bg-secondary navItem" href="#">Logged: </a>
+                          <a class="nav-item nav-link m-1 navItem" href="#">Shipments <span class="sr-only">(current)</span></a>
+                          <a class="nav-item nav-link m-1 navItem" href="#">Samples</a>
+                          <a class="nav-item nav-link m-1 navItem" href="#">Logout</a>
+                          <a class="nav-item nav-link m-1 navItem" href="#">Logged: </a>
                           <!-- <div class="dropdown">
                                                 <a href="#" class="btn btn-secondary nav-item nav-link m-1 selection dropdown-toggle" data-toggle="dropdown" id="dropdownMenuLinkNav" aria-hashpopu=true aria-eaxpanded=false>Year</a>
                                                   
@@ -65,42 +66,47 @@
               <div class="row ">
                 <div class="col-sm-3 p-3">
                   <div class="container">
-                        <div class="card p-2 rider">
-                          
-                        <img class="rounded-circle border border-warning card-img-top p-1" src="media/avatar.png" alt="Card image cap" style="width: 60%; height: auto; margin: auto;">
-                        
-                        <div class="card-title text-center">
-                          <strong>John Snow</strong>
+                        <div class="card p-2 rider border-3 border-danger">
+                          <div class="card-head text-center m-0 mb-1">
+                               <img class="rounded-circle border border-warning card-img-top p-1 mt-2" src="media/avatar.png" alt="Card image cap" style="width: 60%; height: auto;">
+                       
                         </div>
-                          <table>
-                            <tr>
-                              <th><i class="fas fa-birthday-cake"></i></th>
-                              <td>27/05/1990</td>
-                            </tr>
-                            <tr>
-                              <th>Tel:</th>
-                              <td>081 4194 1941</td>
-                            </tr>
-                            <tr>
-                              <th>LGA:</th>
-                              <td>Toronto</td>
-                            </tr>
-                          </table>
+                        <div class="table-body rounded pt-2 pb-2">
+                            <div class="card-title text-center">
+                              <strong>John Snow</strong>
+                            </div>
+                              <table class="ml-3">
+                                    <tr>
+                                        <th><i class="fas fa-birthday-cake"></i></th>
+                                        <td class="pl-4">27/05/1990</td>
+                                    </tr>
+                                    <tr>
+                                        <th><i class="fas fa-phone"></i></th>
+                                        <td class="pl-4">081 4194 1941</td>
+                                    </tr>
+                                    <tr>
+                                        <th><i class="fa fa-map-marker" aria-hidden="true"></i></th>
+                                        <td class="pl-4">Toronto</td>
+                                    </tr>
+                              </table>
+                          </div>
+            
+                          </div>
                       </div>
                   </div>
-                </div>
+                
                 
 
                 <div class="col-sm-9" >
-                  <div class="box  mt-4 mb-4  rounded">
-                        <div class="d-flex-row p-4 justify-content-around">
+                  <div class="box  mt-5 mb-4  rounded shadow-light border border-danger">
+                        <div class="d-flex-row p-4 justify-content-around bg-white rounded">
                           <div class="card-deck">
-                                  <div class="card border-right bg-success" > 
+                                  <div class="card border border-danger" > 
 
-                                          <div class="card-head  p-2 text-center">
+                                          <div class="card-head  p-2 text-center btn-danger rounded">
                                             <i class="fas fa-flask"></i>
                                             <p>Collected</p>
-                                              <div class="dropdown">
+                                              <!-- <div class="dropdown">
                                                 <a href="#" class="btn btn-success selection dropdown-toggle" data-toggle="dropdown" id="dropdownMenuLink1" aria-hashpopu=true aria-eaxpanded=false>Quarter</a>
                                                   
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -110,17 +116,17 @@
                                                   <a href="#" class="dropdown-item">Q4</a>
                                                 </div>
 
-                                              </div>
+                                              </div> -->
                                           </div>
                                           <div class="card-body text-center">
-                                                <h3 id="chn1">2500</h3>
+                                                <h2>50</h2>
                                           </div>
                                   </div>
-                                   <div class="card border-right bg-warning text-center">
-                                          <div class="card-head  p-2">
+                                   <div class="card text-center border border-warning">
+                                          <div class="card-head  p-2 btn-warning rounded">
                                              <i class="fas fa-flask"></i>
                                             <p>Received</p>
-                                            <div class="dropdown">
+                                           <!--  <div class="dropdown">
                                                 <a href="#" class="btn btn-warning dropdown-toggle selection" data-toggle="dropdown" id="dropdownMenuLink" aria-hashpopu=true aria-eaxpanded=false>Quarter</a>
                                                   
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -130,17 +136,17 @@
                                                   <a href="#" class="dropdown-item">Q4</a>
                                                 </div>
 
-                                              </div>
+                                              </div> -->
                                           </div>
                                           <div class="card-body text-center">
-                                            <h3 class="bd">2500</h3>
+                                            <h2>25</h2>
                                           </div>
                                   </div>
-                                  <div class="card border-right bg-danger text-center">
-                                          <div class="card-head p-2">
+                                  <div class="card text-center border border-sucsess">
+                                          <div class="card-head p-2 btn-success rounded">
                                             <span>&#8358;</span>
                                             <p>Earnings</p>
-                                            <div class="dropdown">
+                                            <!-- <div class="dropdown">
                                                 <a href="#" class="btn btn-danger selection dropdown-toggle" data-toggle="dropdown" id="dropdownMenuLink" aria-hashpopu=true aria-eaxpanded=false>Quarter</a>
                                                   
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -150,17 +156,17 @@
                                                   <a href="#" class="dropdown-item">Q4</a>
                                                 </div>
 
-                                              </div>
+                                              </div> -->
                                           </div>
                                           <div class="card-body text-center">
-                                                <h3>2500</h3>
+                                                <h2>2500</h2>
                                           </div>
                                   </div>
-                                  <div class="card border-right bg-success text-center">
-                                        <div class="card-head p-2">
+                                  <div class="card text-center border border-success">
+                                        <div class="card-head p-2 btn-success rounded">
                                             <span>&#8358;</span>
                                             <p>Payout</p>
-                                            <div class="dropdown">
+                                            <!-- <div class="dropdown">
                                                 <a href="#" class="btn btn-success selection dropdown-toggle" data-toggle="dropdown" id="dropdownMenuLink" aria-hashpopu=true aria-eaxpanded=false>Quarter</a>
                                                   
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -170,10 +176,10 @@
                                                   <a href="#" class="dropdown-item">Q4</a>
                                                 </div>
 
-                                              </div>
+                                              </div> -->
                                           </div>
                                           <div class="card-body text-center">
-                                                <h3>2500</h3>
+                                                <h2>2500</h2>
                                           </div>
                                   </div>
                             </div>
@@ -183,14 +189,13 @@
           </div>
         </div>
             <div class="container">
-                  <div class="box table-responsive p-2 pt-3 rounded">
+                  <div class="box table-responsive table-bordered p-2 pt-3 rounded bg-white" style="border-color: tomato;">
                             <table class="table">
                               <div class="card">
 
-                                    <div
-                                      class="view view-cascade py-2 pl-3 pr-3 d-flex justify-content-between align-items-center">
+                                    <div class="view view-cascade py-2 pl-3 pr-3 d-flex justify-content-between align-items-center">
                                         <div class="table-title">
-                                          <h2>Current Shipment</h2>
+                                          <h2 class="text-primary">Current Shipment</h2>
                                         </div>
 
 
@@ -204,6 +209,7 @@
                                       </div>
 
                                     </div>
+                              </div>
 
                                 <thead>
                                   <tr>
@@ -258,25 +264,16 @@
                               </table>
                     </div>
                     
-                    <div class="box table-responsive p-2 pt-3 mt-3 mb-3 rounded">
-                        <div class="container">
-                            <table class="table">
-                               <div
-                                      class="view view-cascade py-2 pl-3 pr-3 d-flex justify-content-between align-items-center">
+                    <div class="box table-responsive table-bordered p-2 pt-3 mt-3 mb-3 rounded bg-white" style="border-color: tomato;">
+  
+                            <table class="table" style="border-color: tomato !important;">
+                              <div class="card">
+                               <div class="view view-cascade py-2 pl-3 pr-3 d-flex justify-content-between align-items-center">
+                                  
                                         <div class="table-title">
-                                          <h2>Last 50 Shipments</h2>
+                                          <h2 class="text-primary">Last 50 Shipments</h2>
                                         </div>
-
-
-                                      <!-- <div>
-                                        <button type="button" class="btn  btn-sm">
-                                          <i class="material-icons">add_circle_outline</i>
-                                        </button>
-                                        <button type="button" class="btn btn-sm">
-                                          <i class="material-icons">post_add</i>
-                                        </button>
-                                      </div> -->
-
+                                    </div>
                                     </div>
                                 <thead>
                                   <tr>
@@ -443,7 +440,7 @@
                                     <td>12/03/1930 12:00pm</td>
                                     <td>Toronto</td>
                                     <td>Picked from facility</td>
-                                    <td class="row">
+                                    <td >
 
                                     </td>
                                   </tr>
@@ -533,14 +530,14 @@
                                   </tr>
                                 </tbody>
                               </table>
-                          </div>
+      
                     </div>
 
                   
                 </div>
             </div>
             
-            <footer class="page-footer font-small">
+            <footer class="page-footer font-small bg-danger">
               <div class="footer-copyright text-center py-3">© 2020 Copyright:
                 <a href="#">Damiene Foundation Nigeria </a>
               </div>
