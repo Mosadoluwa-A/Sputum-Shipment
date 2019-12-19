@@ -17,28 +17,30 @@
 
     <title>Rider Dashboard</title>
     <style type="text/css">
-      .ml-6{
+      /*.ml-6{
         padding-left: 500px;
-      }
+      }*/
     </style>
     <script type="text/javascript">
     </script>
   </head>
   <body>
-            <nav class="navbar navbar-expand-lg" id="navBg">
-              <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light" id="navBg">
+              <div class="container-fluid">
                   <a class="navbar-brand" href="#">
-                    <img src="media/logo2.png">
+                    <img src="media/logo2.png" width="180" height="50">
                   </a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                   </button>
+
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                      <div class="navbar-nav nav-pills ml-6">
+                      <div class="nav navbar-nav ml-auto">
                           <a class="nav-item nav-link m-1 navItem" href="#">Shipments <span class="sr-only">(current)</span></a>
                           <a class="nav-item nav-link m-1 navItem" href="#">Samples</a>
                           <a class="nav-item nav-link m-1 navItem" href="#">Logout</a>
                           <a class="nav-item nav-link m-1 navItem" href="#">Logged: </a>
+
                           <!-- <div class="dropdown">
                                                 <a href="#" class="btn btn-secondary nav-item nav-link m-1 selection dropdown-toggle" data-toggle="dropdown" id="dropdownMenuLinkNav" aria-hashpopu=true aria-eaxpanded=false>Year</a>
                                                   
@@ -63,42 +65,53 @@
             </nav>
               
               <div class="container">          
-              <div class="row ">
-                <div class="col-sm-3 p-3">
-                  <div class="container">
-                        <div class="card p-2 rider border-3 border-danger">
+              <div class="row justify-content-center">
+                <div class="col-sm-5 col-md-3  p-3">
+                       
+                      <!-- <div class="card text-center">
+                        <img class="rounded-circle border border-warning card-img-top p-1 mt-2" src="media/avatar.png" style="width: 50%; height: auto;">
+                        <div class="card-body p-0">
+                          <h5 class="card-title">John Snow</h5>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item p-0">24/09/1990</li>
+                            <li class="list-group-item p-0">08037546263</li>
+                            <li class="list-group-item p-0">Lokoja</li>
+                          </ul>
+                        </div>
+                      </div> -->
+                        <div class="card p-2 rider border-3 border-danger" id="rider">
                           <div class="card-head text-center m-0 mb-1">
-                               <img class="rounded-circle border border-warning card-img-top p-1 mt-2" src="media/avatar.png" alt="Card image cap" style="width: 60%; height: auto;">
+                               <img id="bio-img" class="rounded-circle border border-warning card-img-top p-1 mt-2" src="media/avatar.png" alt="Card image cap">
                        
                         </div>
-                        <div class="table-body rounded pt-2 pb-2">
+                        <div class="table-body rounded p-2 pt-2 pb-2">
                             <div class="card-title text-center">
                               <strong>John Snow</strong>
                             </div>
-                              <table class="ml-3">
+                              <div class="row justify-content-center">
+                              <table class="ml-1">
                                     <tr>
-                                        <th><i class="fas fa-birthday-cake"></i></th>
-                                        <td class="pl-4">27/05/1990</td>
+                                        <th class="bio"><i class="fas fa-birthday-cake"></i></th>
+                                        <td class=" bio pl-2">27/05/1990</td>
                                     </tr>
                                     <tr>
-                                        <th><i class="fas fa-phone"></i></th>
-                                        <td class="pl-4">081 4194 1941</td>
+                                        <th class="bio"><i class="fas fa-phone"></i></th>
+                                        <td class=" bio pl-2">081 4194 1941</td>
                                     </tr>
                                     <tr>
-                                        <th><i class="fa fa-map-marker" aria-hidden="true"></i></th>
-                                        <td class="pl-4">Toronto</td>
+                                        <th class="bio"><i class="fa fa-map-marker" aria-hidden="true"></i></th>
+                                        <td class="bio pl-2">Toronto</td>
                                     </tr>
                               </table>
+                            </div>
                           </div>
             
                           </div>
-                      </div>
                   </div>
                 
-                
 
-                <div class="col-sm-9" >
-                  <div class="box  mt-5 mb-4  rounded shadow-light border border-danger">
+                <div class="col-sm-12 col-md-9" >
+                  <div class="box  mt-3 mb-4  rounded shadow-light border border-danger">
                         <div class="d-flex-row p-4 justify-content-around bg-white rounded">
                           <div class="card-deck">
                                   <div class="card border border-danger" > 
@@ -188,7 +201,7 @@
             </div>
           </div>
         </div>
-            <div class="container">
+            <div class="container-fluid">
                   <div class="box table-responsive table-bordered p-2 pt-3 rounded bg-white" style="border-color: tomato;">
                             <table class="table">
                               <div class="card">
@@ -550,14 +563,14 @@
     <script src="bootstrap/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
-   <script type="text/javascript">
+   <!-- <script type="text/javascript">
       $(document).ready(function(){
         $('.dropdown-item').click(function(){
           $(this).parents(".dropdown").find('.selection').text($(this).text());
           $(this).parents(".dropdown").find('.selection').val($(this).text());
         });
       });
-   </script>
+   </script> -->
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->

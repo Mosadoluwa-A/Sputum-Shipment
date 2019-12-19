@@ -1,13 +1,14 @@
 
-nav{
-	background-color: rgb();
-}body{
+*{
+	margin:0;
+	padding: 0;
+}
+body{
 	background-image: linear-gradient(to bottom, rgba(10, 10, 10, .3), rgba(10, 10, 10, .57)), url(media/b.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 #navBg .navItem {
-	
 	color: #fee;
 	font-weight: bolder;
 }td{
@@ -16,4 +17,33 @@ nav{
 	font-family: 'Baloo Bhai', cursive;
 }.table-body{
 	background-color: rgba(40, 254, 219, 0.4);
+}
+#bio-img{
+	width: 60% !important;
+	height: auto !important;
+}
+@media (max-width: 990px) {
+	h2{
+		font-size: 1.2rem;
+	}
+	td, th, strong{
+		font-size: 0.8rem;
+	}
+}
+
+@media (max-width: 575px) {
+	td, th{
+		font-size: 0.6rem;
+	}
+	.bio{
+		font-size: 1rem;
+	}
+	strong{
+		font-size: 1rem;
+	}
+
+	#bio-img{
+		width: 10rem !important;
+		height: 10rem !important;
+	}
 }
